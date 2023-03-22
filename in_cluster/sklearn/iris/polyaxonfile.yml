@@ -13,10 +13,11 @@ inputs:
 run:
   kind: job
   init:
-  - git: {"url": "https://github.com/stenio123/polyaxon-examples-public"}
+  - git:
+    connection: polyaxon-examples-public
   container:
     image: polyaxon/polyaxon-examples
-    workingDir: "{{ globals.artifacts_path }}/polyaxon-examples/in_cluster/sklearn/iris"
+    workingDir: "{{ globals.artifacts_path }}/polyaxon-examples-public/in_cluster/sklearn/iris"
     command: ["python", "-u", "run.py"]
     args: [
       "--n_neighbors={{ n_neighbors }}",

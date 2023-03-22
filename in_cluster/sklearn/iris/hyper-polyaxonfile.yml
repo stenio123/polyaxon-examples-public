@@ -16,4 +16,4 @@ matrix:
     test_size:
       kind: choice
       value: [0.2, 0.3, 0.4]
-urlRef: https://raw.githubusercontent.com/polyaxon/polyaxon-examples/master/in_cluster/sklearn/iris/polyaxonfile.yml
+urlRef: https://raw.githubusercontent.com/stenio123/polyaxon-examples-public/master/in_cluster/sklearn/iris/polyaxonfile.yml
